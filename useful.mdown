@@ -1,0 +1,10 @@
+# Installer zsh pour linux
+
+```bash
+> sudo apt-get install zsh
+> sudo apt-get install git-core
+```
+
+Choisir le theme dans `~/.zshrc`  (agnoster)
+Ne pas oublier d'installer les fonts [powerline](https://github.com/powerline/fonts)
+
