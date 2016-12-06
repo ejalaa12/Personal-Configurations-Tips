@@ -1,0 +1,32 @@
+# Docker
+
+## List installed images:
+
+```bash
+docker ps -a
+```
+
+## Running a container
+
+```bash
+docker run -it <container>
+```
+
+## Running from another terminal
+
+```bash
+docker ps -l
+docker exec -it <container/name> bash
+```
+
+## Copying file from docker to host
+
+```bash
+docker cp foo.txt mycontainer:/foo.txt
+docker cp mycontainer:/foo.txt foo.txt
+```
+
+## Creating a connection between two docker
+
+it is automatically created. So they can ping each other.
+If `ifconfig` is not installed, check `/etc/hosts`

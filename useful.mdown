@@ -8,3 +8,7 @@
 Choisir le theme dans `~/.zshrc`  (agnoster)
 Ne pas oublier d'installer les fonts [powerline](https://github.com/powerline/fonts)
 
+# Configuration for iTerm2 OSX
+
+https://gist.github.com/kevin-smets/8568070
+
