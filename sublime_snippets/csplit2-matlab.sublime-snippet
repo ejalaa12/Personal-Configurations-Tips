@@ -1,0 +1,11 @@
+<snippet>
+    <tabTrigger>csplit2</tabTrigger>
+    <scope>source.matlab</scope>
+    <description>Creates a comment section splitter</description>
+
+  <content><![CDATA[
+%% ------------------------------------------------------------------------
+% ${1:name}
+
+]]></content>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+    <tabTrigger>module</tabTrigger>
+    <scope>source.python</scope>
+    <description>Module</description>
+
+  <content><![CDATA[# -*- coding: utf-8 -*-
+"""
+    ${1:name}
+    ${1/./~/g}
+    ${2:description}
+"""]]></content>
+</snippet>

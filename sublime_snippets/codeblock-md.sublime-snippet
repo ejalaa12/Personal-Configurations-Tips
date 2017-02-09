@@ -1,0 +1,11 @@
+<snippet>
+    <tabTrigger>cblk</tabTrigger>
+    <scope>text.html.markdown</scope>
+    <description>Creates a code block</description>
+
+  <content><![CDATA[
+```${1:language}
+${2:code}
+```
+  	]]></content>
+</snippet>
