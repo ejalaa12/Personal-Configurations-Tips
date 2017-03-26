@@ -1,0 +1,27 @@
+A File Icon
+AMPL Language
+Anaconda
+Asciidoctor
+Boxy Theme
+Boxy Theme Addon - Font Face
+Boxy Theme Addon - Unified Mode
+BracketHighlighter
+CMake
+Color Highlighter
+ColorHelper
+Compare Side-By-Side
+DashDoc
+Git
+GitGutter
+HTMLBeautify
+Markdown Preview
+Monokai Extended
+Package Control
+Pandoc
+SideBarEnhancements
+Skins
+SyncedSideBar
+Terminal
+Text Pastry
+Theme - SpaceBlack
+zzz A File Icon zzz
