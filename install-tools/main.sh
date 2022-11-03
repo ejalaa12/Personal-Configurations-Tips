@@ -139,5 +139,4 @@ mkdir ~/dev
 # ###########################################################
 
 sudo update-alternatives --set x-terminal-emulator /usr/bin/tilix.wrapper
-sudo update-alternatives --set gnome-www-browser /usr/bin/google-chrome-stable
-sudo update-alternatives --set x-www-browser /usr/bin/google-chrome-stable
+
