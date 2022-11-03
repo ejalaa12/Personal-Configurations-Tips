@@ -1,0 +1,107 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+
+    
+
+    // Example launch of a python file
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+    },
+    // Example gdb launch of a ros executable
+    {
+      "name": "(gdb) Launch from build folder",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/${input:package}/${input:program}",
+      // "preLaunchTask": "build package",
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {"text": "break main", "ignoreFailures": true},
+        {
+          "description": "Set arguments to the program",
+          "text": "-ex \"set args ${input:args}\"",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "(gdb) Debug test rov controller interface",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/frs_control_law_server/test_rov_controller_interface",
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {"text": "break main", "ignoreFailures": true},
+        {
+          "description": "Set arguments to the program",
+          "text": "set args --ros-args --params-file /home/ejalaa/dev/moveit2_ws/help_params/all.yaml",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "type": "gdb",
+      "request": "attach",
+      "name": "Attach to gdbserver",
+      "executable": "${workspaceFolder}/build/frs_control_law_server/test_rov_controller_interface",
+      "remote": true,
+      "target": "localhost:9999",
+      "cwd": "${workspaceRoot}",
+      "gdbpath": "/usr/bin/gdb",
+      "autorun": [
+
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "package",
+      "type": "command",
+      "command": "shellCommand.execute",
+      "args": {
+        "command": "ls -d */ | cut -d'/' -f1",
+        "cwd": "${workspaceFolder}/build",
+      },
+      //     "description": "Package name",
+    },
+    {
+      "id": "program",
+      "type": "command",
+      "command": "shellCommand.execute",
+      "args": {
+        "command": "find . -maxdepth 2 -perm -111 -type f | cut -d'/' -f2-",
+        "cwd": "${workspaceFolder}/build/${input:package}",
+      },
+    },
+    {
+      "id": "args",
+      "type": "promptString",
+      "default": "",
+      "description": "Additional arguments (leave empty if none)"
+    }
+  ]
+}

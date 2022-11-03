@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/usr/include/**",
+        "${workspaceFolder}/**",
+        "/opt/ros/humble/include/**"
+      ],
+      "name": "ROS",
+      "defines": [],
+      "compilerPath": "/usr/bin/gcc",
+      "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+    }
+  ],
+  "version": 4
+}
