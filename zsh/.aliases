@@ -2,3 +2,6 @@ alias vi="nvim"
 alias vim="nvim"
 alias zshconfig="nvim ~/.zshrc"
 alias j=jump
+vif(){
+    vi `fzf`
+}
