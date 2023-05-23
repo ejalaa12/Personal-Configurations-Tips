@@ -1,0 +1,26 @@
+source /usr/share/zsh-antigen/antigen.zsh
+
+# Load the oh-my-zsh's library
+antigen use oh-my-zsh
+
+antigen bundles <<EOBUNDLES
+    git
+    history
+    python
+    taskwarrior
+    zsh-interactive-cd
+    jump
+    jfrog
+    
+    zsh-users/zsh-syntax-highlighting
+    zsh-users/zsh-autosuggestions
+    zsh-users/zsh-completions
+    unixorn/autoupdate-antigen.zshplugin
+    unixorn/fzf-zsh-plugin@main
+EOBUNDLES
+
+# Load the theme
+antigen theme romkatv/powerlevel10k
+
+# Tell antigen that you're done
+antigen apply

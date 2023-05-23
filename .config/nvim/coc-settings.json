@@ -1,0 +1,6 @@
+{
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "/home/ejalaa/.local/bin/black",
+    "cmake.cmakePath": "/usr/bin/cmake"
+
+}

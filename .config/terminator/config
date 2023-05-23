@@ -1,0 +1,57 @@
+[global_config]
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
+  always_split_with_profile = True
+  case_sensitive = False
+[keybindings]
+  broadcast_off = <Alt>o
+  broadcast_group = <Alt>g
+  broadcast_all = <Alt>a
+  preferences = <Primary>comma
+[profiles]
+  [[default]]
+    background_color = "#000a0d"
+    background_darkness = 0.81
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Ubuntu Mono derivative Powerline 10
+    foreground_color = "#839496"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+  [[Misterioso]]
+    background_color = "#2d3743"
+    background_darkness = 0.85
+    background_type = transparent
+    cursor_color = "#000000"
+    font = Ubuntu Mono derivative Powerline 10
+    foreground_color = "#e1e1e0"
+    palette = "#000000:#ff4242:#74af68:#ffad29:#338f86:#9414e6:#23d7d7:#e1e1e0:#555555:#ff3242:#74cd68:#ffb929:#23d7d7:#ff37ff:#00ede1:#ffffff"
+    use_system_font = False
+  [[Solarized Dark]]
+    background_color = "#002b36"
+    background_darkness = 0.88
+    cursor_color = "#eee8d5"
+    font = Ubuntu Mono derivative Powerline 10
+    foreground_color = "#eee8d5"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#586e75:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+  [[Solarized Dark - Patched]]
+    background_color = "#001e27"
+    background_darkness = 0.93
+    background_type = transparent
+    cursor_color = "#f34b00"
+    font = Ubuntu Mono derivative Powerline 10
+    foreground_color = "#9cc2c3"
+    palette = "#002831:#d11c24:#6cbe6c:#a57706:#2176c7:#c61c6f:#259286:#eae3cb:#006488:#f5163b:#51ef84:#b27e28:#178ec8:#e24d8e:#00b39e:#fcf4dc"
+    use_system_font = False
+  [[Solarized Dark Higher Contrast]]
+    cursor_color = "#aaaaaa"
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+[plugins]

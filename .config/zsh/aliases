@@ -1,0 +1,28 @@
+alias humble="source /opt/ros/humble/setup.zsh"
+si()
+{
+    source install/setup.zsh
+    eval "$(register-python-argcomplete3 ros2)"
+}
+sil()
+{
+    source install/local_setup.zsh
+    eval "$(register-python-argcomplete3 ros2)"
+}
+alias tf2echo="ros2 run tf2_ros tf2_echo"
+alias wros="echo $ROS_DISTRO"
+# ZSH aliases
+alias vi="nvim"
+alias vim="nvim"
+alias zshconfig="nvim ~/.zshrc"
+alias j=jump
+vif(){
+    vi `fzf`
+}
+alias lg="lazygit"
+alias sapi="sudo apt install"
+alias sapu="sudo apt update"
+alias sapU="sudo apt upgrade"
+alias o="xdg-open ."
+
+
